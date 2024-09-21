@@ -26,7 +26,7 @@ import "../assets/client/vendor/slick/slick.css";
 import "../assets/client/vendor/MagnificPopup/magnific-popup.css";
 import "../assets/client/vendor/perfect-scrollbar/perfect-scrollbar.css";
 import "../assets/client/vendor/daterangepicker/moment.min.js";
-import "../assets/client/vendor/daterangepicker/daterangepicker.js";
+// import "../assets/client/vendor/daterangepicker/daterangepicker.js";
 // import "../assets/client/js/main.js";
 // import "../assets/client/vendor/slick/slick.min.js";
 // import "../assets/client/vendor/parallax100/parallax100.js";
