@@ -1,5 +1,5 @@
 import React from "react";
-import logo_01 from "../../../assets/client/images/icons/logo-01.png";
+import logo_01 from "../../../assets/client/images/icons/munaShop.png";
 
 const Header = () => {
   return (
@@ -7,8 +7,6 @@ const Header = () => {
     <header>
       {/* Header desktop */}
       <div className="container-menu-desktop">
-        
-
         <div className="wrap-menu-desktop">
           <nav className="limiter-menu-desktop container">
             {/* Logo desktop */}
@@ -21,17 +19,6 @@ const Header = () => {
               <ul className="main-menu">
                 <li className="active-menu">
                   <a href="/">Home</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="index.html">Homepage 1</a>
-                    </li>
-                    <li>
-                      <a href="home-02.html">Homepage 2</a>
-                    </li>
-                    <li>
-                      <a href="home-03.html">Homepage 3</a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li>
@@ -77,6 +64,12 @@ const Header = () => {
               >
                 <i className="zmdi zmdi-favorite-outline"></i>
               </a>
+              <a
+                href="/login"
+                className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11"
+              >
+                <i className="zmdi zmdi-account"></i>
+              </a>
             </div>
           </nav>
         </div>
@@ -87,7 +80,7 @@ const Header = () => {
         {/* Logo mobile */}
         <div className="logo-mobile">
           <a href="index.html">
-            <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
+            <img src={logo_01} alt="IMG-LOGO" />
           </a>
         </div>
 
