@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "../views/@theme/client/header";
 import Footer from "../views/@theme/client/footer";
 import Home from "../components/client/home";
@@ -9,6 +9,11 @@ import ShoppingCart from "../views/client/cart/index.js";
 import Contact from "../views/client/contact/index.js";
 import Blog from "../views/client/blog/index.js";
 import About from "../views/client/about/index.js";
+import Auth from "../views/client/auth/index.js";
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+// import Login from "../"
 // import Product from "../components/client/product/products.js";
 // import ProductDetails from "../components/client/product/product-details.js";
 import "../assets/client/css/main.css";
@@ -46,7 +51,9 @@ const ClientRoutes = () => {
           <Route path="/contact/*" element={<Contact />} />
           <Route path="/blog/*" element={<Blog />} />
           <Route path="/about/*" element={<About />} />
+          <Route path="/auth/*" element={<Auth />} />
           <Route path="*" element={<PageNotFound />} />
+
         </>
       </Routes>
       <Footer />

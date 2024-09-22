@@ -65,7 +65,7 @@ const Header = () => {
                 <i className="zmdi zmdi-favorite-outline"></i>
               </a>
               <a
-                href="/login"
+                href="/auth/login"
                 className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11"
               >
                 <i className="zmdi zmdi-account"></i>
@@ -99,10 +99,16 @@ const Header = () => {
 
           <a
             href="#"
-            className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
-            data-notify="0"
+            className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 "
           >
-            <i className="zmdi zmdi-favorite-outline"></i>
+            <i className="zmdi zmdi-favorite-outline"></i>6
+
+          </a>
+          <a
+            href="/auth/login"
+            className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11"
+          >
+            <i className="zmdi zmdi-account"></i>
           </a>
         </div>
 
@@ -147,17 +153,6 @@ const Header = () => {
         <ul className="main-menu-m">
           <li>
             <a href="index.html">Home</a>
-            <ul className="sub-menu-m">
-              <li>
-                <a href="index.html">Homepage 1</a>
-              </li>
-              <li>
-                <a href="home-02.html">Homepage 2</a>
-              </li>
-              <li>
-                <a href="home-03.html">Homepage 3</a>
-              </li>
-            </ul>
             <span className="arrow-main-menu-m">
               <i className="fa fa-angle-right" aria-hidden="true"></i>
             </span>
