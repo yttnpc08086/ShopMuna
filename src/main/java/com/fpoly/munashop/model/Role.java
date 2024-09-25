@@ -1,8 +1,7 @@
-package com.fpoly.munashop.Entity;
+package com.fpoly.munashop.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 
 import java.io.Serializable;
 import java.util.List;
@@ -14,18 +13,15 @@ import java.util.List;
 @Setter
 
 @Entity
-@Table(name="Sizes")
-public class Size implements Serializable{
+@Table(name="Roles")
+public class Role implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	String name;
+	private String name;
 	
-	@OneToMany(mappedBy = "size")
-	List<Order> order;
+	@OneToMany(mappedBy = "role")
+	List<UserRole> userRole;
 	
-	public Size(int id) {
-		this.id = id;
-	}
 }

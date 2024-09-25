@@ -1,4 +1,4 @@
-package com.fpoly.munashop.Entity;
+package com.fpoly.munashop.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -13,22 +13,25 @@ import java.io.Serializable;
 @Setter
 
 @Entity
-@Table(name="Product_Size")
-public class ProductSize implements Serializable {
+@Table(name="Product_Color")
+public class ProductColor implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	private String image;
 	
 	@ManyToOne
 	@JoinColumn(name="Product_Id")
 	Product product;
 	
 	@ManyToOne
-	@JoinColumn(name="Size_Id")
-	Size size;
+	@JoinColumn(name="Color_Id")
+	Color color;
 	
-	public ProductSize(Product product, Size size) {
+	public ProductColor(String image, Product product, Color color) {
+		this.image = image;
 		this.product = product;
-		this.size = size;
+		this.color = color;
 	}
 }

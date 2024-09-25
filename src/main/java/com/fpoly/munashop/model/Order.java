@@ -1,4 +1,4 @@
-package com.fpoly.munashop.Entity;
+package com.fpoly.munashop.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -54,7 +54,4 @@ public class Order implements Serializable {
 		this.product = product;
 	}
 
-	
-	
-	
 }

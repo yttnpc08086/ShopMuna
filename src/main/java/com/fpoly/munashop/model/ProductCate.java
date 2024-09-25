@@ -1,4 +1,4 @@
-package com.fpoly.munashop.Entity;
+package com.fpoly.munashop.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -13,25 +13,23 @@ import java.io.Serializable;
 @Setter
 
 @Entity
-@Table(name="Product_Color")
-public class ProductColor implements Serializable {
+@Table(name="Product_Cate")
+public class ProductCate implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	private String image;
-	
 	@ManyToOne
 	@JoinColumn(name="Product_Id")
 	Product product;
-	
+		
 	@ManyToOne
-	@JoinColumn(name="Color_Id")
-	Color color;
+	@JoinColumn(name="Cate_Id")
+	Category category;
 	
-	public ProductColor(String image, Product product, Color color) {
-		this.image = image;
+	public ProductCate(Product product, Category category) {
 		this.product = product;
-		this.color = color;
+		this.category = category;
 	}
+	
 }
